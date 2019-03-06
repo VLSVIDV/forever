@@ -1,0 +1,76 @@
+ /* ==========================================================================
+   TYPOGRAPHY
+   ===========================================================================*/
+/* TITLES */
+h1,
+.h1{
+	font-family: $font-family-main;
+	color: $color-white;
+	line-height: $line-height-main;
+	font-weight: $font-weight-main;
+	padding: 0;
+	margin: 0;
+}
+h2,
+.h2{
+	font-family: $font-family-main;
+	color: $color-black;
+	line-height: $line-height-main;
+	font-weight: $font-weight-main;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* TEXT */
+.italic{
+	font-style: italic;
+}
+.text_center{
+	text-align: center !important;
+}
+.text_left{
+	text-align: left !important;
+}
+.text_rigth{
+	text-align: right !important;
+}
+.text_bold{
+	font-weight: 700;
+}
+.text_uppercase{
+	text-transform: uppercase;
+}
+.no-upercouse{
+	text-transform: none;
+}
+/* LINKS */
+a {
+	font-family: $font-family-main;
+	@include font-size($font-size-main);
+	line-height: $line-height-main;
+	font-weight: $font-weight-main;
+	text-decoration: none;
+	&:hover{
+		color:#97c684;
+		text-decoration: underline;
+		transition: .3s ease-in-out;
+	}
+}
+a[href^="mailto:"],
+a[href^="tel:"]{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+ul,
+ol{
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	li{
+		list-style: none;
+	}
+}
+/* end typography */

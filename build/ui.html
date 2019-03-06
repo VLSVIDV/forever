@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Forever new</title>
+	<meta name="keywords" content="keywords" />
+	<meta name="description" content="description" />
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+	<!--viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+	<!--meta(name="viewport" content="width=device-width, initial-scale=1.0")-->
+	<!--modernizr-->
+	<script src="js/modernizr-custom.min.js"></script>
+	<!--styles-->
+	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.0" />
+</head>
+
+<body>
+	<!--header-->
+	<header class="header">
+		<div class="container">
+			<a class="logo" href="./"></a>
+			<nav class="header__menu" id="menu">
+				<button class="close-menu"><i class="close-menu__icon"></i>
+				</button>
+				<ul class="header__nav">
+					<li><a href="#">Home</a>
+					</li>
+					<li><a href="#">Products</a>
+					</li>
+					<li><a href="#">Science of laundry</a>
+					</li>
+					<li><a href="#">Tips</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="btn_search" href="#"></a>
+			<a class="btn_shop" href="#">
+				<svg class="icon">
+					<use xlink:href="images/sprite/sprite.svg#icon-basket"></use>
+				</svg>
+			</a>
+			<div class="header__lang"><a href="#">en</a><a href="#">fr</a>
+			</div>
+			<button class="burger"></button>
+		</div>
+	</header>
+	<main class="wrapper">
+		<div class="block" style="padding:20px; background: linear-gradient(to bottom, #f7fbfc 0%,#34ccf2 40%,#add9e4 100%); width:1400px; margin:0 auto;">
+			<p>1. FONTS</p>
+			<p style="font-weight:400; font-family:'Libre Italic'; color:#42220b;">LibreBaskerville-Italic', 400</p>
+			<p style="font-weight:400; font-family:'Libre Regular';color:#42220b;">LibreBaskerville-Regular', 400</p>
+			<p style="font-weight:400; font-family:'Monsterat';color:#42220b;">Montserrat-Regular', 400</p>
+			<p style="font-weight:600; font-family:'Monsterat';color:#42220b;">Montserrat-SemiBold', 600</p>
+			<p style="font-weight:600; font-family:'Sfui';color:#42220b;">SFUIDisplay-Regular', 400</p>
+			<p>Link</p><a href="#" style="color:#42220b;">link</a>
+		</div>
+		<div class="block" style="padding:20px; background: linear-gradient(to bottom, #f7fbfc 0%,#34ccf2 40%,#add9e4 100%); width:1400px; margin:0 auto;">
+			<p>2. BUTTONS</p>
+			<p>.btn_primary</p>
+			<button class="btn btn_primary">Subscription program?</button>
+			<p>.btn_primary-green</p>
+			<button class="btn btn_primary btn_primary-green">Shop now</button>
+			<p>.btn_add</p>
+			<button class="btn btn_card btn_card-add">Add to card</button>
+			<p>.btn_buy</p>
+			<button class="btn btn_card btn_card-buy">Buy now</button>
+			<p>.btn_check</p>
+			<button class="btn btn_check">Proceed to check out</button>
+			<p>.btn-order</p>
+			<button class="btn btn-order">Login</button>
+			<button class="btn btn-order">Place order</button>
+			<p>.btn-basket</p>
+			<button class="btn btn-basket">Update cart</button>
+			<button class="btn btn-basket btn-basket_white">Proceed to checkout</button>
+			<button class="btn btn-basket">Return to shopping</button>
+			<p>.btn-basket_brown</p>
+			<button class="btn btn-basket_brown">Apply Coupon</button>
+		</div>
+		<div class="block" style="padding:20px; background: linear-gradient(to bottom, #f7fbfc 0%,#34ccf2 40%,#add9e4 100%); width:1400px; margin:0 auto;">
+			<p>3.PRODUCT a(href="#").product</p>
+			<a class="product" href="#">
+				<div class="product__image">
+					<img src="images/product-1.jpg" />
+				</div>
+				<div class="product__name">Every day fashion care</div>
+			</a>
+		</div>
+		<div class="block" style="padding:20px; background: linear-gradient(to bottom, #f7fbfc 0%,#34ccf2 40%,#add9e4 100%); width:1400px; margin:0 auto;">
+			<div class="sellers-card sellers-card_hot">
+				<a class="sellers-card__image" href="#">
+					<img src="../images/seller-card-1.jpg" />
+					<div class="sellers-card__buttons">
+						<button class="btn btn_card btn_card-add">Add to card</button>
+						<button class="btn btn_card btn_card-buy">Buy now</button>
+					</div>
+				</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+				<div class="sellers-card__price">$ 170.00</div>
+			</div>
+		</div>
+		<div class="block" style="padding:20px; background: linear-gradient(to bottom, #f7fbfc 0%,#34ccf2 40%,#add9e4 100%); width:1400px; margin:0 auto;">
+			<div class="catalog-card">
+				<a class="catalog-card__image" href="#">
+					<img src="images/catalog-card-1.jpg" />
+				</a>
+				<div class="catalog-card__info"><a class="catalog-card__name" href="">Wash Bags & Bra Bathers</a>
+					<div class="catalog-card__text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium</div>
+					<div class="catalog-card__price">$ 170.00</div>
+					<button class="btn btn_card btn_card-add">Add to cart</button>
+					<button class="btn btn_check">Proceed to check out</button>
+				</div>
+			</div>
+		</div>
+		<div class="block" style="padding:20px; background: linear-gradient(to bottom, #f7fbfc 0%,#34ccf2 40%,#add9e4 100%); width:1400px; margin:0 auto;">
+			<div class="review-card">
+				<div class="review-card__text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</div>
+				<div class="review-card__user">
+					<div class="review-card__photo">
+						<img src="images/review-user.png" />
+					</div>
+					<div class="review-card__name">Alex Koperwoos</div>
+				</div>
+			</div>
+		</div>
+		<div class="block" style="padding:20px; background: linear-gradient(to bottom, #f7fbfc 0%,#34ccf2 40%,#add9e4 100%); width:1400px; margin:0 auto;">
+			<ul class="breadcrumbs">
+				<li><a class="breadcrumbs__link" href="#">Home</a>
+				</li>
+				<li><a class="breadcrumbs__link" href="#">Every Day Fashion Care</a>
+				</li>
+			</ul>
+		</div>
+		<!--slider-products-->
+		<div class="container">
+			<div class="slider-products">
+				<div class="slider-products__title">Best sellers<a href="#">View All</a>
+				</div>
+				<div class="slider-products__inner js-products-1">
+					<div class="sellers-card">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+					<div class="sellers-card sellers-card_hot">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+					<div class="sellers-card">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+					<div class="sellers-card sellers-card_hot">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+					<div class="sellers-card sellers-card_hot">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+					<div class="sellers-card sellers-card_hot">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+					<div class="sellers-card sellers-card_hot">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+					<div class="sellers-card sellers-card_hot">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+					<div class="sellers-card sellers-card_hot">
+						<a class="sellers-card__image" href="#">
+							<img src="../images/seller-card-1.jpg" />
+							<div class="sellers-card__buttons">
+								<button class="btn btn_card btn_card-add">Add to card</button>
+								<button class="btn btn_card btn_card-buy">Buy now</button>
+							</div>
+						</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+						<div class="sellers-card__price">$ 170.00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="section-banner section-banner_green">
+			<div class="container">
+				<div class="section-banner__title">Laundry with kindness</div>
+				<p>Commited to gentle, effective cleaning, Forever new will always be made with:</p><span>Eco-friendly, plant based, biodegradeble cleansers Naturally  derived essential oils Free off parabens, biodegradeble cleansers And never tested on animals</span>
+			</div>
+		</section>
+		<section class="section-bredcrumbs">
+			<div class="container">
+				<h2 class="section-bredcrumbs__title">Every Day Fashion Care</h2>
+				<div class="section-bredcrumbs__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+					mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</div>
+				<ul class="breadcrumbs">
+					<li><a class="breadcrumbs__link" href="#">Home</a>
+					</li>
+					<li><a class="breadcrumbs__link" href="#">Every Day Fashion Care</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div class="container">
+			<form class="form">
+				<div class="form__group">
+					<label class="form__label">First Name *</label>
+					<input class="form__input" placeholder="Your name" />
+				</div>
+			</form>
+		</div>
+	</main>
+	<!--footer-->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-block">
+				<div class="footer-block__top">forever new
+					<p>love your clothers</p>
+				</div>
+				<div class="footer-block__inner">Quisque rytrum. Aenean imperdiet. Etiam ultricies nisivel augue.</div>
+				<div class="footer-block__bottom">© 2016</div>
+			</div>
+			<div class="footer-block">
+				<ul class="footer-block__list">
+					<li><a class="footer-block__title" href="#">department</a>
+					</li>
+					<li><a href="#">Products</a>
+					</li>
+					<li><a href="#">How to use</a>
+					</li>
+					<li><a href="#">Good to Know</a>
+					</li>
+					<li><a href="#">Media</a>
+					</li>
+					<li><a href="#">Retailer</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-block">
+				<ul class="footer-block__list">
+					<li><a class="footer-block__title" href="#">information</a>
+					</li>
+					<li><a href="#">Our Career</a>
+					</li>
+					<li><a href="#">About us</a>
+					</li>
+					<li><a href="#">Join news letter</a>
+					</li>
+					<li><a href="#">Corporates</a>
+					</li>
+					<li><a href="#">Relations</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-block"><a class="footer-block__title" href="#">social network</a>
+				<div class="footer-block__social">
+					<a href="#">
+						<svg class="icon icon-ig">
+							<use xlink:href="images/sprite/sprite.svg#ig"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<img src="images/icon-fb.png" />
+					</a>
+				</div>
+				<div class="footer-block__inner">Quisque rytrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</div>
+				<form class="footer-block__form">
+					<input class="footer-block__input" type="email" name="mail" />
+					<button class="footer-block__submit" type="submit">
+						<svg class="icon icon-send">
+							<use xlink:href="images/sprite/sprite.svg#sent-mail"></use>
+						</svg>
+					</button>
+					<div class="footer-block__line"></div>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<!--jquery-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/app.min.js"></script>
+	<div class="pages" id="pages-22">
+		<div class="pages-header" id="toogle-23">
+			<p>Навигация страниц верстки</p><span>GP</span><i class="icon-pages" id="close-24"></i>
+		</div>
+		<ul>
+			<li><a href="./">Главная</a>
+			</li>
+			<li><a href="ui.html">UI</a>
+			</li>
+			<li><a href="catalog.html">Catalog</a>
+			</li>
+			<li><a href="contacts.html">Contacts</a>
+			</li>
+			<li><a href="blog.html">Blog</a>
+			</li>
+			<li><a href="checkout.html">Checkout</a>
+			</li>
+			<li><a href="blog-inner.html">Blog inner</a>
+			</li>
+			<li><a href="basket.html">Basket</a>
+			</li>
+			<li><a href="product.html">Product</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$('#toogle-23').on('click', function(event) {
+			event.preventDefault();
+			/*Act on the event */
+			$('#pages-22').toggleClass('open');
+		});
+	</script>
+</body>
+
+</html>

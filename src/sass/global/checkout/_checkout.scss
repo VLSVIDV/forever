@@ -1,0 +1,276 @@
+.checkout{
+  padding: 80px 0 107px;
+  @include mq('tablet', 'max'){
+    padding: 30px 0 0;
+  }
+}
+.checkout__block{
+  position: relative;
+  &:not(:first-child){
+    padding-top: 49px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 463px;
+      height: 2px;
+      background-color: #f2f2f2;
+      @include mq('tablet','max'){
+        width: 290px;
+      }
+    }
+  }
+}
+.checkout__group{
+  padding-bottom: 45px;
+}
+.checkout__btn.active{
+  &:after{
+    transform: rotate(180deg);
+  }
+}
+.checkout__btn{
+  position: relative;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #141414;
+  cursor: pointer;
+  &:after{
+    content: '';
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    width: 9px;
+    height: 5px;
+    transform: translateY(-50%);
+    background: url("../images/arrow-up.svg") no-repeat;
+    transition: .3s ease-in-out;
+  }
+  @include mq('tablet','max'){
+    @include font-size(13px);
+  }
+}
+.checkout__text{
+  margin-top: 44px;
+  margin-bottom: 57px;
+  @include font-size(16px);
+  line-height: 24px;
+  color: #0b0b0b;
+  letter-spacing: 1.2px;
+  @include mq('tablet', 'max'){
+    margin-top: 24px;
+    @include font-size(14px);
+  }
+}
+.panel{
+  //display: none;
+}
+.form_login{
+  .form__group{
+    &:not(:first-child){
+      margin-top: 46px;
+    }
+  }
+  .btn{
+    margin-top: 19px;
+  }
+  .checkbox{
+    margin-top: 17px;
+  }
+}
+//checkbox
+.checkbox{
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+input[type=checkbox] {
+  opacity: 0;
+}
+.checkbox__label{
+  display: block;
+  padding-left: 15px;
+  font-family: $font-family-libre-r;
+  color: $color-main;
+}
+.checkbox__label:before {
+  content:'';
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border:1px solid #ededed;
+  left: 0;
+  top: 0;
+}
+
+.checkbox__input:checked + .checkbox__label:before {
+  background: url("../images/icon-checked.svg") no-repeat;
+}
+.form__lost{
+  display: inline-block;
+  margin-top: 20px;
+  font-family: $font-family-libre-i;
+  color: $color-green;
+}
+.form_billing{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .form__group{
+    margin-top: 46px;
+    &:last-child{
+      margin-right: 306px;
+      @include mq('tablet', 'max'){
+        margin-right: 0;
+      }
+    }
+    @include mq('tablet', 'max'){
+      width: 100%;
+    }
+  }
+}
+.form_additional{
+  margin-top: 44px;
+}
+.form_additional__area{
+  min-width: 567px;
+  min-height: 72px;
+  resize: none;
+  @include mq('tablet', 'max'){
+    min-width: 100%;
+  }
+}
+.checkout__notif{
+  margin-top: 16px;
+  margin-bottom: 49px;
+  @include font-size(15px);
+  width: 63%;
+  font-family: $font-family-libre-i;
+  line-height: 24px;
+  color: #d1d1d1;
+  @include mq('tablet','max'){
+    width: 100%;
+  }
+}
+.form_shipp{
+  margin-top: 80px;
+}
+.checkout__order{
+  max-width: 569px;
+}
+.radio-button_flex{
+  display: flex;
+}
+.checkout__link{
+  margin-left: auto;
+  font-family: $font-family-libre-i;
+  color: $color-green;
+}
+//radio
+
+.radio-button {
+  cursor: pointer;
+  color:#42220b;
+  input[type="radio"] {
+    display: none;
+
+    &:checked + .custom-radio::before{
+      transform: scale(1);
+    }
+  }
+
+  .custom-radio {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #ededed;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: -1px;
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: #97c684;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      margin-left: -3px;
+      margin-top: -3px;
+      transform: scale(0);
+      transition: all 0.3s ease;
+    }
+  }
+}
+//table
+.checkout__table{
+  margin-top: 70px;
+  width: 100%;
+  color:$color-main;
+  border-collapse: collapse;
+  tr{
+    td{
+      border-bottom: 1px solid #f2f2f2;
+      padding: 17px 0;
+      &:nth-child(even){
+        text-align: right;
+        font-style: italic;
+      }
+      &:nth-child(odd){
+        font-family: $font-family-libre-r;
+      }
+      @include mq('tablet', 'max'){
+        @include font-size(13px);
+      }
+    }
+  }
+}
+.subtotal{
+  td{
+    font-family: $font-family-main;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+tr.total{
+  td{
+    font-family: $font-family-main;
+    text-transform: uppercase;
+    &:last-child{
+      @include font-size(24px);
+      @include mq('tablet', 'max'){
+        @include font-size(20px);
+      }
+    }
+  }
+}
+
+.form_pay{
+  margin-top: 30px;
+  .btn{
+    margin-top: 42px;
+  }
+}
+.select_checkout{
+  min-width: 467px;
+  height: 50px;
+  border: 2px solid #f2f2f2;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  padding-left: 10px;
+  @include mq('tablet', 'max'){
+    min-width: 100%;
+  }
+  &:hover{
+    color:$color-main;
+  }
+}

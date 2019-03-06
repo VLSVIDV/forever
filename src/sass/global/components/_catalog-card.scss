@@ -1,0 +1,73 @@
+.catalog-card{
+  display: flex;
+  flex-direction: row;
+  width: 552px;
+  height: 328px;
+  background: $color-white;
+  overflow: hidden;
+  @include mq('desktop-max', 'max'){
+    width: 50%;
+    height: auto;
+  }
+  @include mq('laptop', 'max'){
+    width: 100%;
+  }
+  @include mq('tablet', 'max'){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.catalog-card__image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 251px;
+  @include mq('tablet', 'max'){
+    width: 100%;
+  }
+}
+.catalog-card__info{
+  display: flex;
+  flex-direction: column;
+  width: 54%;
+  .btn_card{
+    margin: 30px 0 20px 0;
+    @include mq('tablet', 'max'){
+      margin: 20px 0 10px 0;
+    }
+  }
+  @include mq('tablet', 'max'){
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
+.catalog-card__name{
+  font-family: $font-family-libre-r;
+  @include font-size(22px);
+  color: #43230c;
+}
+.catalog-card__text{
+  margin-top: 20px;
+  width: 60%;
+  color:$color-main;
+  @include mq('desktop', 'max'){
+    width: 100%;
+  }
+}
+.catalog-card__price{
+  position: relative;
+  margin-top: 50px;
+  @include font-size(24px);
+  color:$color-black;
+  letter-spacing: 0.6px;
+  &:before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    height: 2px;
+    width: 40px;
+    background: $color-black;
+  }
+}

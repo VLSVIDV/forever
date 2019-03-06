@@ -1,0 +1,26 @@
+section.contacts-content
+    .container
+        .contacts-content__social
+            p AND WE’RE ALWAYS READY IF YOU WANT TO TALK WITH US
+            a(href="#")
+                svg.icon.icon-ig.icon-ig-2
+                    use(xlink:href='images/sprite/sprite.svg#ig')
+            a(href="#")
+                img(src="images/icon-fb-2.png")
+        .contacts-content__form
+            p Forever new
+            span 89 NGUYEN CHI THANH, HANOI, VN
+            span HOTLINE:
+                a(href="tel:84293743") (+84) 293 743
+            span EMAIL:
+                a(href="mailto:SUPPORT@VALEY.CO") SUPPORT@VALEY.CO
+            form.form.form_contacts
+                .form__group
+                    input.form__input(placeholder="Your name" name="name" type="text")
+                .form__group
+                    input.form__input(placeholder="Your email" name="mail" type="email")
+                .form__group
+                    input.form__input(placeholder="Your subject" name="subj" type="text")
+                .form__group
+                    textarea.form_contacts__area
+                button(type="submit").btn.btn-order Send

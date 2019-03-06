@@ -1,0 +1,113 @@
+section.checkout
+    .container
+        .checkout__block
+            button.accordion.checkout__btn Login
+            .panel.checkout__group
+                p.checkout__text If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.
+                form.form.form_login
+                    .form__group
+                        label.form__label Username or Email *
+                        input.form__input.form__input_checkout(type="text" name="name")
+                    .form__group
+                        label.form__label Password *
+                        input.form__input.form__input_checkout(type="password" name="pass")
+                    button.btn.btn-order login
+                    label.checkbox
+                        input.checkbox__input(type='checkbox')
+                        span.checkbox__label Remember me
+                    a(href="#").form__lost Lost yotur password?
+        .checkout__block
+            button.accordion.checkout__btn billing details
+            .panel.checkout__group
+                form.form.form_billing.form_checkout
+                    .form__group
+                        label.form__label First Name *
+                        input.form__input.form__input_checkout(type="text" name="name1")
+                    .form__group
+                        label.form__label Address *
+                        input.form__input.form__input_checkout(type="text" placeholder="Street address" name="address")
+                    .form__group
+                        label.form__label Last Name *
+                        input.form__input.form__input_checkout(type="text" name="name2")
+                    .form__group
+                        label.form__label
+                        input.form__input.form__input_checkout(type="text" placeholder="Apprtment, suite, unit etx.(optional)")
+                    .form__group
+                        label.form__label Company Name
+                        input.form__input.form__input_checkout(type="text" name="company")
+                    .form__group
+                        label.form__label Town / City *
+                        input.form__input.form__input_checkout(type="text" name="city")
+                    .form__group
+                        label.form__label Email Address *
+                        input.form__input.form__input_checkout(type="email" name="mail")
+                    .form__group
+                        label.form__label State / Country *
+                        input.form__input.form__input_checkout(type="text" name="country")
+                    .form__group
+                        label.form__label Phone *
+                        input.form__input.form__input_checkout(type="phone" name="phone" )
+                    .form__group
+                        label.form__label Postcode / ZIP *
+                        input.form__input.form__input_checkout(type="text" name="postcode")
+                    .form__group
+                        label.form__label Country *
+                        select.select.select_checkout Country *
+                            option Russia
+                            option KZ
+                            option UA
+                    .form__group
+                        label.checkbox
+                            input.checkbox__input(type='checkbox')
+                            span.checkbox__label Create an account?
+        .checkout__block
+            button.accordion.checkout__btn Additional information
+            .panel.checkout__group
+                .form.form_additional
+                    .form__group
+                        label.form__label Order Notes
+                        textarea.form__input.form_additional__area(placeholder="Notes about yor order, e.g, special notes for delivery.")
+        .checkout__block
+            button.accordion.checkout__btn calculate shipping method
+            .panel.checkout__group
+                form.form.form_shipp
+                    label.radio-button
+                        input(type='radio', name='radio')
+                        span.custom-radio
+                        |     Delivery
+                    .checkout__notif Please send your cheque to lorem ipsum dolor sit amet noborder click here
+                    label.radio-button
+                        input(type='radio', name='radio')
+                        span.custom-radio
+                        |     Pickup
+        .checkout__block
+            button.accordion.checkout__btn your order
+            .panel.checkout__group.checkout__order
+                table.checkout__table
+                    tr
+                        td Product
+                        td Total
+                    tr
+                        td Lorem ipsum dolor sit x 1
+                        td $ 165.00
+                    tr
+                        td ASOS Cable Knit Jumper x 1
+                        td $ 165.00
+                    tr.subtotal
+                        td Subtotal
+                        td $ 198.50
+                    tr.total
+                        td total
+                        td $ 198.50
+                form.form.form_pay.form_checkout
+                    label.radio-button
+                        input(type='radio', name='radio')
+                        span.custom-radio
+                        |     Cheque Payment
+                    .checkout__notif Please send your cheque to Store Name, Store Srteet, Store Town, Store State / Country, Store Postcode.
+                    label.radio-button.radio-button_flex
+                        input(type='radio', name='radio')
+                        span.custom-radio
+                        |     PayPal
+                        a(href="#").checkout__link What is PayPal?
+                    button.btn.btn-order(type="submit") place order

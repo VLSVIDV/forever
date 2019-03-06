@@ -1,0 +1,83 @@
+.sellers-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width:25%;
+  min-height:446px;
+  background: $color-white;
+  overflow: hidden;
+  &:hover{
+    .sellers-card__name{
+      &:before{
+        background-color: #608b44;
+        transition: .3s ease-in-out;
+      }
+    }
+    .sellers-card__buttons{
+      opacity: 1;
+      transition: .3s ease-in-out;
+    }
+  }
+}
+.sellers-card_hot{
+  &:before{
+    content: 'HOT!';
+    position: absolute;
+    top: 17px;
+    right: 0;
+    text-align: center;
+    font-weight: 600;
+    @include font-size(10px);
+    line-height: 26px;
+    width: 58px;
+    height: 26px;
+    background-color: #97c684;
+    z-index: 1;
+  }
+}
+.sellers-card__image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 345px;
+}
+.sellers-card__buttons{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: .3s ease-in-out;
+  opacity: 0;
+  .btn{
+    &:first-child{
+      margin-bottom: 5px;
+    }
+  }
+}
+.sellers-card__name{
+  position: relative;
+  margin-top: auto;
+  color: $color-main;
+  letter-spacing: 0.35px;
+  &:before{
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 0;
+    width: 100px;
+    height: 1px;
+    background-color: #e1e1e1;
+  }
+}
+.sellers-card__price{
+  margin-top: 17px;
+  font-weight: 600;
+  color: #aaa;
+}

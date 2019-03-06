@@ -1,0 +1,181 @@
+.product-inner{
+  padding: 53px 0 100px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    @include mq('tablet', 'max'){
+      flex-direction: column;
+    }
+  }
+  @include mq('tablet', 'max'){
+    padding: 30px 0 30px;
+  }
+}
+.product-inner__left{
+  width: 50%;
+  p{
+    margin-top: 60px;
+    margin-bottom: 72px;
+    @include font-size(16px);
+    color: #141414;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  .form__group{
+    &:not(last-child){
+      margin-bottom: 47px;
+    }
+  }
+  @include mq('tablet', 'max'){
+    width: 100%;
+    order:2;
+  }
+}
+.product-inner__form{
+  display: flex;
+  flex-direction: column;
+  .btn{
+    margin-left: auto;
+    @include mq('tablet', 'max'){
+      min-width: 100%;
+    }
+  }
+}
+.product-inner__image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 468px;
+  background-color: #fcfafa;
+  @include mq('tablet', 'max'){
+    min-height: 368px;
+  }
+}
+.product-inner__area{
+  min-height: 233px;
+  width: 100%;
+  @include mq('desktop', 'max'){
+    min-width: 100%;
+  }
+}
+.product-inner__input{
+  width: 100%;
+}
+.product-inner__right{
+  width: 41.4%;
+  @include mq('tablet', 'max'){
+    width: 100%;
+  }
+  @include mq('tablet', 'max'){
+    .btn{
+      min-width: 100%;
+    }
+  }
+}
+.product-inner__back{
+  padding-bottom: 10px;
+  font-family: $font-family-libre-i;
+  @include font-size(16px);
+  color:$color-green;
+  letter-spacing: 1.6px;
+  border-bottom: 1px solid #608b44;
+  @include mq('tablet', 'max'){
+    @include font-size(13px);
+  }
+}
+.product-inner__title{
+  margin-top: 50px;
+  font-family: $font-family-libre-r;
+  @include font-size(36px);
+  color:$color-main;
+  @include mq('tablet', 'max'){
+    margin-top: 30px;
+    @include font-size(25px);
+  }
+}
+.product-inner__text{
+  position: relative;
+  margin-top: 16px;
+  padding: 28px 0 55px;
+  color:$color-main;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: $color-black;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: $color-black;
+  }
+  @include mq('tablet', 'max'){
+    padding-bottom: 28px;
+  }
+}
+.product-inner__price{
+  margin-top: 36px;
+  margin-bottom: 35px;
+  @include font-size(48px);
+  color:$color-black;
+  letter-spacing: 1.2px;
+  @include mq('tablet', 'max'){
+    @include font-size(30px);
+    margin: 26px 0;
+  }
+}
+.product-inner__reviews{
+  margin-top: 147px;
+  @include mq('tablet', 'max'){
+    margin-top: 57px;
+  }
+}
+.product-inner__user{
+  position: relative;
+  @include font-size(16px);
+  font-family: $font-family-libre-i;
+  color:$color-main;
+  span{
+    position: relative;
+    padding-left: 19px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 9px;
+      height: 18px;
+      width: 1px;
+      background: $color-main;
+    }
+  }
+  &:not(first-child){
+    padding-top: 51px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 377px;
+      height: 2px;
+      background-color: #f2f2f2;
+    }
+  }
+}
+.product-inner__comment{
+  padding-bottom: 47px;
+  margin-top: 23px;
+  @include font-size(16px);
+  color: #0b0b0b;
+  letter-spacing: 1.2px;
+}

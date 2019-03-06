@@ -1,0 +1,25 @@
+.breadcrumbs{
+  display: flex;
+  flex-direction: row;
+  li{
+    position: relative;
+    &:not(:last-child){
+      margin-right: 35px;
+      &:after{
+        content: '/';
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform:translateY(-50%);
+      }
+    }
+  }
+}
+.breadcrumbs__link{
+  color:$color-white;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  @include mq("tablet", "max"){
+    @include font-size(12px)
+  }
+}

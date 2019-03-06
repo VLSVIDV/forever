@@ -1,0 +1,78 @@
+section.basket
+    .container
+        table.basket__table
+            tr
+                td product
+                td Name
+                td price
+                td quantity
+                td total
+            tr
+                td.basket__image
+                    img(src="images/basket-1.png")
+                td.basket__name Lorem ipsum dolor sit
+                td.basket__price $ 170.00
+                td.basket-quan
+                    .basket-quan__number 1
+                    .basket-quan__buttons
+                        button.basket__btn.basket__btn_plus
+                            i
+                                svg.icon
+                                    use(xlink:href='images/sprite/sprite.svg#arrow-btn')
+                        button.basket__btn.basket__btn_minus
+                            i
+                                svg.icon.icon-down
+                                    use(xlink:href='images/sprite/sprite.svg#arrow-btn')
+                td.basket__total $ 24.50
+            tr
+                td.basket__image
+                    img(src="images/basket-2.png")
+                td.basket__name ASOS Cable Knit Jumper
+                td.basket__price $ 34.50
+                td.basket-quan
+                    .basket-quan__number 2
+                    .basket-quan__buttons
+                        button.basket__btn.basket__btn_plus
+                            i
+                                svg.icon
+                                    use(xlink:href='images/sprite/sprite.svg#arrow-btn')
+                        button.basket__btn.basket__btn_minus
+                            i
+                                svg.icon.icon-down
+                                    use(xlink:href='images/sprite/sprite.svg#arrow-btn')
+                td.basket__total $ 24.50
+            tr
+                td.basket__image
+                    img(src="images/basket-3.png")
+                td.basket__name Lorem ipsum dolor sit
+                td.basket__price $ 170.00
+                td.basket-quan
+                    .basket-quan__number 1
+                    .basket-quan__buttons
+                        button.basket__btn.basket__btn_plus
+                            i
+                                svg.icon
+                                    use(xlink:href='images/sprite/sprite.svg#arrow-btn')
+                        button.basket__btn.basket__btn_minus
+                            i
+                                svg.icon.icon-down
+                                    use(xlink:href='images/sprite/sprite.svg#arrow-btn')
+                td.basket__total $ 24.50
+        .basket-totals
+            .basket-totals__title Cart totals
+            table.basket-totals__table
+                tr
+                    td Subtotal
+                    td $ 165.00
+                tr
+                    td Total
+                    td $ 24.50
+            .basket__buttons
+                button.btn.btn-basket update cart
+                button.btn.btn-basket.btn-basket_white proceed to checkout
+                button.btn.btn-basket return to shopping
+            .basket-totals__title do you have coupon code?
+            form.basket__form
+                .form__group
+                    input.form__input.form__input_checkout(type="text")
+                button(type="submit").btn.btn-basket.btn-basket_brown apply Coupon

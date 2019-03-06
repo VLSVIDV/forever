@@ -1,0 +1,194 @@
+.basket{
+  padding: 68px 0 40px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    @include mq('laptop', 'max'){
+      flex-wrap: wrap;
+    }
+  }
+  @include mq('tablet', 'max'){
+    padding: 30px 0 0;
+  }
+}
+.basket__table{
+  width: 65%;
+  @include mq('laptop', 'max'){
+    width: 100%;
+  }
+  tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 180px;
+    border-bottom: 2px solid #f2f2f2;
+    &:first-child{
+      min-height: auto;
+      @include mq('tablet', 'max'){
+        display: none;
+      }
+    }
+    &:first-child{
+      td{
+        padding: 23px 0;
+        color: #141414;
+        @include font-size(16px);
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+    }
+    @include mq('tablet', 'max'){
+      flex-direction: column;
+      padding: 20px 0;
+      min-height: 280px;
+    }
+  }
+}
+.basket__image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #faf9f9;
+  background-repeat: no-repeat;
+}
+.basket__name{
+  max-width: 136px;
+  color: #321a09;
+  line-height: 24px;
+  @include mq('tablet', 'max'){
+    max-width: 100%;
+  }
+}
+.basket__price{
+  color: #321a09;
+  font-weight: 600;
+}
+.basket-quan{
+  display: flex;
+  width: 80px;
+  height: 62px;
+  border: 2px solid #ebebeb;
+  @include mq('tablet', 'max'){
+    width: 60px;
+    height: 60px;
+  }
+}
+.basket-quan__number{
+  margin-top: -1px;
+  width: 56px;
+  height: 58px;
+  text-align: center;
+  color: #321a09;
+  @include font-size(13px);
+  line-height: 57px;
+  font-weight: 600;
+  border-right:2px solid #ebebeb
+}
+.basket-quan__buttons{
+  position: relative;
+  width: 24px;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 27px;
+    background: #ebebeb;
+  }
+}
+.basket__btn{
+  margin-top: -2px;
+  display: flex;
+  justify-content: center;
+  height: 31px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    .icon{
+      color:$color-green;
+    }
+  }
+}
+.icon{
+  transition: .3s;
+}
+.icon-down{
+  transform: rotate(180deg);
+}
+.basket__total{
+  font-family: $font-family-libre-i;
+  @include font-size(30px);
+  color:$color-green;
+  @include mq('tablet', 'max'){
+    @include font-size(22px);
+  }
+}
+.basket-totals{
+  padding: 43px 67px 39px;
+  width: 30.7%;
+  background: $color-green;
+  color:$color-white;
+  @include mq('desktop', 'max'){
+    padding: 30px 20px 39px;
+  }
+  @include mq('laptop', 'max'){
+    width: 100%;
+  }
+  @include mq('tablet', 'max'){
+    margin-top: 30px;
+  }
+}
+.basket-totals__title{
+  @include font-size(13px);
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+.basket-totals__table{
+  margin-top: 32px;
+  width: 100%;
+  tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:last-child{
+      margin-top: 30px;
+      td{
+        &:last-child{
+          font-family: $font-family-libre-r;
+          @include font-size(30px);
+        }
+        &:first-child{
+          text-transform: uppercase;
+        }
+      }
+    }
+    td{
+      &:last-child{
+        font-style: italic;
+      }
+    }
+  }
+}
+.basket__buttons{
+  margin-bottom: 49px;
+  margin-top: 40px;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.basket__form{
+  margin-top: 30px;
+  .form__input{
+    padding-left: 30px;
+    min-width: 100%;
+  }
+  .btn{
+    margin-top: 42px;
+  }
+}

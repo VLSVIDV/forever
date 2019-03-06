@@ -1,0 +1,70 @@
+@import "_functions.scss";
+//
+//1. FONTS
+//
+
+//NEW INCLUDE FONTS FROM MIXIN
+@include font-face('Libre Italic', '../fonts/LibreBaskerville-Italic', 400, normal, eot woff ttf);
+@include font-face('Libre Regular', '../fonts/LibreBaskerville-Regular', 400, normal, eot woff ttf);
+@include font-face('Monsterat', '../fonts/Montserrat-Regular', 400, normal, eot woff ttf);
+@include font-face('Monsterat', '../fonts/Montserrat-SemiBold', 600, normal, eot woff ttf);
+@include font-face('Sfui', '../fonts/SFUIDisplay-Regular', 400, normal, eot woff ttf);
+
+$font-family-main: 'Monsterat', "Times New Roman", serif;
+$font-family-libre-i: 'Libre Italic';
+$font-family-libre-r: 'Libre Regular';
+$font-family-sfui: 'Sfui';
+
+//SIZE
+$font-size-main: 14px;
+$font-size-btn:13px;
+
+
+//LINE HEIGHT
+$line-height-main: 1.2;
+
+
+//WEIGHT
+$font-weight-main: 400;
+
+
+//
+//2. COLORS
+//
+$color-main: #42220b;
+$color-white: #fff;
+$color-black: #000;
+$color-green: #97c684;
+
+//3. BUTTONS
+$button: (
+	max-width: 100%,
+	min-width: 103px,
+	padding:0 10px,
+	height: 52px,
+	line-height: 52px,
+	font-family: $font-family-main,
+	font-size: 13px,
+	font-weight: $font-weight-main
+);
+
+// 5. @MEDIA QUERIES
+//
+$breakpoints: (
+	"phone":       320px,
+	"tablet-small":500px,
+	"tablet":      768px,
+	"laptop":      980px,
+	"desktop": 	   1200px,
+	"desktop-max": 1920px
+);
+
+//
+// 6. Z-INDEX ELEMENTS
+//
+
+$z-layers: (
+	back: -1,
+	default: 1,
+	button: 3
+);

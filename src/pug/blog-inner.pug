@@ -1,0 +1,11 @@
+doctype html
+html(lang="ru")
+    include global/head.pug
+    body.home
+        include global/header.pug
+        //main
+        main.wrapper
+            include blog-inner/inner-banner
+            include blog-inner/blog-inner
+            include pages/pages.pug
+    include global/footer.pug

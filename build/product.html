@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Forever new</title>
+	<meta name="keywords" content="keywords">
+	<meta name="description" content="description">
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!--viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+	<!--meta(name="viewport" content="width=device-width, initial-scale=1.0")-->
+	<!--modernizr-->
+	<script src="js/modernizr-custom.min.js"></script>
+	<!--styles-->
+	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.0">
+</head>
+
+<body class="home">
+	<!--header-->
+	<header class="header">
+		<div class="container">
+			<a class="logo" href="./"></a>
+			<nav class="header__menu" id="menu">
+				<button class="close-menu"><i class="close-menu__icon"></i>
+				</button>
+				<ul class="header__nav">
+					<li><a href="#">Home</a>
+					</li>
+					<li><a href="#">Products</a>
+					</li>
+					<li><a href="#">Science of laundry</a>
+					</li>
+					<li><a href="#">Tips</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="btn_search" href="#"></a>
+			<a class="btn_shop" href="#">
+				<svg class="icon">
+					<use xlink:href="images/sprite/sprite.svg#icon-basket"></use>
+				</svg>
+			</a>
+			<div class="header__lang"><a href="#">en</a><a href="#">fr</a>
+			</div>
+			<button class="burger"></button>
+		</div>
+	</header>
+	<!--main-->
+	<main class="wrapper">
+		<section class="product-inner">
+			<div class="container">
+				<div class="product-inner__left">
+					<a class="product-inner__image" href="#">
+						<img src="images/product-1.png">
+					</a>
+					<p>review</p>
+					<form class="product-inner__form">
+						<div class="form__group">
+							<label class="form__label">Your review*</label>
+							<textarea class="form__input form_additional__area product-inner__area" name="area"></textarea>
+						</div>
+						<div class="form__group">
+							<label class="form__label">Name*</label>
+							<input class="form__input product-inner__input" type="text" name="name">
+						</div>
+						<div class="form__group">
+							<label class="form__label">Email*</label>
+							<input class="form__input product-inner__input" type="email" name="mail">
+						</div>
+						<button class="btn btn-order" type="submit">submit</button>
+					</form>
+				</div>
+				<div class="product-inner__right"><a class="product-inner__back" href="#">Back to Shop</a>
+					<div class="product-inner__title">Wash Bags & Bra Bathers</div>
+					<div class="product-inner__text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</div>
+					<div class="product-inner__price">$ 170.00</div>
+					<button class="btn btn_card btn_card-add">Add to card</button>
+					<div class="product-inner__reviews">
+						<div class="product-inner__user">Alexander Shestakov<span>12/06/16</span>
+						</div>
+						<div class="product-inner__comment">If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</div>
+						<div class="product-inner__user">James Stone<span>11/06/16</span>
+						</div>
+						<div class="product-inner__comment">If you are a new customer, please proceed to the Billing & Shipping section.</div>
+						<div class="product-inner__user">Alexander Shestakov<span>12/06/16</span>
+						</div>
+						<div class="product-inner__comment">If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</div>
+						<div class="product-inner__user">James Stone<span>11/06/16</span>
+						</div>
+						<div class="product-inner__comment">If you are a new customer, please proceed to the Billing & Shipping section.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-banner section-banner_green">
+			<div class="container">
+				<div class="section-banner__title">Laundry with kindness</div>
+				<p>Commited to gentle, effective cleaning, Forever new will always be made with:</p><span>Eco-friendly, plant based, biodegradeble cleansers Naturally  derived essential oils Free off parabens, biodegradeble cleansers And never tested on animals</span>
+			</div>
+		</section>
+		<!--section-sliders-->
+		<section class="section-sliders">
+			<div class="container">
+				<div class="slider-products">
+					<div class="slider-products__title">Best sellers<a href="#">View All</a>
+					</div>
+					<div class="slider-products__inner js-products">
+						<div class="sellers-card">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-1.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+						<div class="sellers-card sellers-card_hot">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-2.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+						<div class="sellers-card">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-3.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+						<div class="sellers-card sellers-card_hot">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-4.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+						<div class="sellers-card sellers-card_hot">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-1.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+						<div class="sellers-card sellers-card_hot">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-1.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+						<div class="sellers-card sellers-card_hot">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-1.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+						<div class="sellers-card sellers-card_hot">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-1.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+						<div class="sellers-card sellers-card_hot">
+							<a class="sellers-card__image" href="#">
+								<img src="../images/seller-card-1.jpg">
+								<div class="sellers-card__buttons">
+									<button class="btn btn_card btn_card-add">Add to card</button>
+									<button class="btn btn_card btn_card-buy">Buy now</button>
+								</div>
+							</a><a class="sellers-card__name" href="#">Longline Bomber</a>
+							<div class="sellers-card__price">$ 170.00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--modal-->
+		<div class="modal">
+			<button class="btn-close">CLOSE
+				<svg class="icon icon-close">
+					<use xlink:href="images/sprite/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+			<div class="modal__title">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</div>
+			<form class="modal__form">
+				<div class="form__group">
+					<label class="form__label">Your review*</label>
+					<textarea class="form__input form_additional__area product-inner__area" name="rev"></textarea>
+				</div>
+				<div class="form__group">
+					<label class="form__label">Name*</label>
+					<input class="form__input product-inner__input" type="text" name="name">
+				</div>
+				<div class="form__group">
+					<label class="form__label">Email*</label>
+					<input class="form__input product-inner__input" type="email" name="mail">
+				</div>
+				<button class="btn btn-order" type="submit">submit</button>
+			</form>
+		</div>
+		<div class="modal-overlay"></div>
+		<!--jquery-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/app.min.js"></script>
+		<div class="pages" id="pages-22">
+			<div class="pages-header" id="toogle-23">
+				<p>Навигация страниц верстки</p><span>GP</span><i class="icon-pages" id="close-24"></i>
+			</div>
+			<ul>
+				<li><a href="./">Главная</a>
+				</li>
+				<li><a href="ui.html">UI</a>
+				</li>
+				<li><a href="catalog.html">Catalog</a>
+				</li>
+				<li><a href="contacts.html">Contacts</a>
+				</li>
+				<li><a href="blog.html">Blog</a>
+				</li>
+				<li><a href="checkout.html">Checkout</a>
+				</li>
+				<li><a href="blog-inner.html">Blog inner</a>
+				</li>
+				<li><a href="basket.html">Basket</a>
+				</li>
+				<li><a href="product.html">Product</a>
+				</li>
+			</ul>
+		</div>
+		<script>
+			$('#toogle-23').on('click', function(event) {
+				event.preventDefault();
+				/*Act on the event */
+				$('#pages-22').toggleClass('open');
+			});
+		</script>
+	</main>
+</body>
+<!--footer-->
+<footer class="footer">
+	<div class="container">
+		<div class="footer-block">
+			<div class="footer-block__top">forever new
+				<p>love your clothers</p>
+			</div>
+			<div class="footer-block__inner">Quisque rytrum. Aenean imperdiet. Etiam ultricies nisivel augue.</div>
+			<div class="footer-block__bottom">© 2016</div>
+		</div>
+		<div class="footer-block">
+			<ul class="footer-block__list">
+				<li><a class="footer-block__title" href="#">department</a>
+				</li>
+				<li><a href="#">Products</a>
+				</li>
+				<li><a href="#">How to use</a>
+				</li>
+				<li><a href="#">Good to Know</a>
+				</li>
+				<li><a href="#">Media</a>
+				</li>
+				<li><a href="#">Retailer</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-block">
+			<ul class="footer-block__list">
+				<li><a class="footer-block__title" href="#">information</a>
+				</li>
+				<li><a href="#">Our Career</a>
+				</li>
+				<li><a href="#">About us</a>
+				</li>
+				<li><a href="#">Join news letter</a>
+				</li>
+				<li><a href="#">Corporates</a>
+				</li>
+				<li><a href="#">Relations</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-block"><a class="footer-block__title" href="#">social network</a>
+			<div class="footer-block__social">
+				<a href="#">
+					<svg class="icon icon-ig">
+						<use xlink:href="images/sprite/sprite.svg#ig"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<img src="images/icon-fb.png">
+				</a>
+			</div>
+			<div class="footer-block__inner">Quisque rytrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</div>
+			<form class="footer-block__form">
+				<input class="footer-block__input" type="email" name="mail">
+				<button class="footer-block__submit" type="submit">
+					<svg class="icon icon-send">
+						<use xlink:href="images/sprite/sprite.svg#sent-mail"></use>
+					</svg>
+				</button>
+				<div class="footer-block__line"></div>
+			</form>
+		</div>
+	</div>
+</footer>
+
+</html>

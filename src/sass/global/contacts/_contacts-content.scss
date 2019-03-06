@@ -1,0 +1,119 @@
+.contacts-content{
+  padding: 80px 0 100px;
+  .container{
+    display: flex;
+    @include mq('tablet', 'max'){
+      flex-wrap: wrap;
+    }
+  }
+  @include mq('tablet', 'max'){
+    padding: 20px 0 20px;
+  }
+}
+.contacts-content__social{
+  width: 50%;
+  p{
+    position: relative;
+    margin-bottom: 34px;
+    padding-bottom: 39px;
+    color:$color-main;
+    @include font-size(30px);
+    text-transform: uppercase;
+    @include mq('laptop', 'max'){
+      @include font-size(20px);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 111px;
+      height: 3px;
+      background: $color-green;
+    }
+  }
+  .icon-ig{
+    margin-right: 25px;
+  }
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  @include mq('tablet', 'max'){
+    width: 100%;
+  }
+}
+.contacts-content__form{
+  width: 50%;
+  p{
+    @include font-size(30px);
+    color:$color-main;
+    text-transform: uppercase;
+    @include mq('laptop', 'max'){
+      @include font-size(20px);
+    }
+  }
+  span{
+    margin-top: 20px;
+    display: block;
+    font-family: $font-family-libre-r;
+    color: #998e8e;
+    a{
+      padding-left: 5px;
+      font-family: inherit;
+      color:inherit;
+    }
+  }
+  @include mq('tablet', 'max'){
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+.icon-ig-2{
+  color:#603f25;
+}
+//form
+.form_contacts{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  margin-top: 110px;
+  .form__group{
+    margin-bottom: 20px;
+    @include mq('desktop', 'max'){
+      width: 100%;
+    }
+    &:nth-child(3){
+      width: 100%;
+      .form__input{
+        width: 100%;
+      }
+    }
+    &:nth-child(4){
+      width: 100%;
+    }
+    .form__input{
+      @include mq('desktop', 'max'){
+        width: 100%;
+      }
+    }
+  }
+  .btn{
+    margin-left: auto;
+    @include mq('tablet', 'max'){
+      width: 100%;
+    }
+  }
+  @include mq('laptop', 'max'){
+    margin-top: 50px;
+  }
+}
+.form_contacts__area{
+  padding: 20px;
+  min-height: 182px;
+  width: 100%;
+  border: 2px solid #f2f2f2;
+  resize: none;
+  outline: none;
+}

@@ -1,0 +1,29 @@
+.form__group{
+  position: relative;
+}
+.form__label{
+  position: absolute;
+  top: -25px;
+  left: 0;
+  font-family: $font-family-libre-r;
+  color:$color-main;
+}
+.form__input{
+  padding: 20px;
+  height: 50px;
+  min-width: 260px;
+  border: 2px solid #f2f2f2;
+  outline: none;
+  &::placeholder{
+    font-family: $font-family-libre-i;
+    @include font-size(11px);
+    color: #afafc3;
+    letter-spacing: 0.28px;
+  }
+}
+.form__input_checkout{
+  min-width: 468px;
+  @include mq('tablet', 'max'){
+    min-width: 100%;
+  }
+}

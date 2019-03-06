@@ -1,0 +1,18 @@
+//modal
+.modal
+    button.btn-close CLOSE
+        svg.icon.icon-close
+            use(xlink:href='images/sprite/sprite.svg#icon-close')
+    .modal__title Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+    form.modal__form
+        .form__group
+            label.form__label Your review*
+            textarea.form__input.form_additional__area.product-inner__area(name="rev")
+        .form__group
+            label.form__label Name*
+            input.form__input.product-inner__input(type="text" name="name")
+        .form__group
+            label.form__label Email*
+            input.form__input.product-inner__input(type="email" name="mail")
+        button(type="submit").btn.btn-order submit
+.modal-overlay

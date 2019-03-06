@@ -1,0 +1,21 @@
+#pages-22.pages
+	#toogle-23.pages-header
+		p Навигация страниц верстки
+		span GP
+		i#close-24.icon-pages
+	ul
+		li: a(href="./") Главная
+		li: a(href="ui.html") UI
+		li: a(href="catalog.html") Catalog
+		li: a(href="contacts.html") Contacts
+		li: a(href="blog.html") Blog
+		li: a(href="checkout.html") Checkout
+		li: a(href="blog-inner.html") Blog inner
+		li: a(href="basket.html") Basket
+		li: a(href="product.html") Product
+script.
+	$('#toogle-23').on('click', function(event) {
+		event.preventDefault();
+		/*Act on the event */
+		$('#pages-22').toggleClass('open');
+	});

@@ -1,0 +1,174 @@
+/* ==========================================================================
+	 BUTTONS
+	 ===========================================================================*/
+.btn,
+.btn[type="button"]{
+	//position
+	position: relative;
+	z-index: z(button);
+	//box mmodel
+	display: inline-block;
+	vertical-align: middle;
+	padding: btn(padding);
+	min-width: btn(min-width);
+	max-width: btn(max-width);
+	height: btn(height);
+	//font
+	font-family: btn(font-family);
+	@include font-size(btn(font-size));
+	line-height: btn(line-height);
+	font-weight: btn(font-weight);
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	// other
+	overflow: hidden;
+	cursor: pointer;
+
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-appearance: inherit;
+	z-index: 1;
+	transition: all .3s ease;
+	text-transform: uppercase;
+	&:focus{
+		outline:none;
+	}
+	&:hover{
+		cursor: pointer;
+	}
+	@include mq ('tablet', 'max') {
+		padding: 0 10px;
+	}
+}
+//btn_primary
+.btn_primary{
+	padding: 0 24px;
+	border: 2px solid #ededed;
+	background: transparent;
+	color: #141414;
+	letter-spacing: 2.2px;
+	&:hover{
+		border-color:#97c684;
+	}
+}
+//btn_primary-green
+.btn_primary-green{
+	min-width: 189px;
+	border: 2px solid #97c684;
+	&:hover{
+		border-color:$color-main;
+	}
+}
+//btn_add
+.btn_card{
+	padding: 0 40px 0 55px;
+	width: 208px;
+	color:$color-white;
+	background-color: $color-main;
+	border:2px solid transparent;
+	opacity: 0.87;
+	background-image: url("../images/icon-add.png");
+	background-repeat: no-repeat;
+	background-position: 30px 20px;
+	&:hover{
+		opacity: .8;
+		background-image: url("../images/icon-add.png");
+		background-repeat: no-repeat;
+		background-position: 30px 20px;
+	}
+}
+//btn_add
+.btn_card-add{
+	background-image: url("../images/icon-add.png");
+	&:hover{
+		background-image: url("../images/icon-add.png");
+	}
+}
+//btn_buy
+.btn_card-buy{
+	padding-left: 26px;
+	min-width:191px;
+	background-image: url("../images/icon-eye.png");
+	background-position: 30px 21px;
+	&:hover{
+		background-image: url("../images/icon-eye.png");
+		background-position: 30px 21px;
+	}
+}
+
+
+//btn_check
+.btn_check{
+	padding: 0 12px;
+	width: 208px;
+	color:$color-white;
+	background-color: #97c684;
+	border:2px solid #97c684;
+	letter-spacing: 0.65px;
+	opacity: 0.87;
+	&:hover{
+		opacity: 0.7;
+	}
+}
+//btn_order
+.btn-order{
+	padding: 0 30px;
+	color:$color-white;
+	background-color: $color-main;
+	border:2px solid $color-main;
+	&:hover{
+		background: transparent;
+		border:2px solid #97c684;
+		color: $color-main;
+	}
+}
+//btn_basket
+.btn-basket{
+	min-width:228px;
+	background: transparent;
+	color:$color-white;
+	border:2px solid $color-white;
+	&:hover{
+		color: #321a09;
+		background: $color-white;
+	}
+}
+.btn-basket_white{
+	color: #321a09;
+	background: $color-white;
+	&:hover{
+		background: transparent;
+		color:$color-white;
+	}
+}
+.btn-basket_brown{
+	padding: 0 58px;
+	min-width: 100%;
+	background: $color-main;
+	border:2px solid $color-main;
+	color:$color-white;
+	&:hover{
+		background: transparent;
+	}
+}
+/* disabled styles */
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn{
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: .25;
+	filter: alpha(opacity=25);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+button[type="button"]{
+	cursor: pointer;
+}
+/* end buttons*/

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Forever new</title>
+	<meta name="keywords" content="keywords">
+	<meta name="description" content="description">
+	<!--favicon-->
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<!--viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+	<!--meta(name="viewport" content="width=device-width, initial-scale=1.0")-->
+	<!--modernizr-->
+	<script src="js/modernizr-custom.min.js"></script>
+	<!--styles-->
+	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.0">
+</head>
+
+<body class="home">
+	<!--header-->
+	<header class="header">
+		<div class="container">
+			<a class="logo" href="./"></a>
+			<nav class="header__menu" id="menu">
+				<button class="close-menu"><i class="close-menu__icon"></i>
+				</button>
+				<ul class="header__nav">
+					<li><a href="#">Home</a>
+					</li>
+					<li><a href="#">Products</a>
+					</li>
+					<li><a href="#">Science of laundry</a>
+					</li>
+					<li><a href="#">Tips</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="btn_search" href="#"></a>
+			<a class="btn_shop" href="#">
+				<svg class="icon">
+					<use xlink:href="images/sprite/sprite.svg#icon-basket"></use>
+				</svg>
+			</a>
+			<div class="header__lang"><a href="#">en</a><a href="#">fr</a>
+			</div>
+			<button class="burger"></button>
+		</div>
+	</header>
+	<!--main-->
+	<main class="wrapper">
+		<section class="section-bredcrumbs section-bredcrumbs_contacts">
+			<div class="container">
+				<h2 class="section-bredcrumbs__title">Every Day Fashion Care</h2>
+				<div class="section-bredcrumbs__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+					mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</div>
+				<ul class="breadcrumbs">
+					<li><a class="breadcrumbs__link" href="#">Home</a>
+					</li>
+					<li><a class="breadcrumbs__link" href="#">Every Day Fashion Care</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="contacts-content">
+			<div class="container">
+				<div class="contacts-content__social">
+					<p>AND WE’RE ALWAYS READY IF YOU WANT TO TALK WITH US</p>
+					<a href="#">
+						<svg class="icon icon-ig icon-ig-2">
+							<use xlink:href="images/sprite/sprite.svg#ig"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<img src="images/icon-fb-2.png">
+					</a>
+				</div>
+				<div class="contacts-content__form">
+					<p>Forever new</p><span>89 NGUYEN CHI THANH, HANOI, VN</span><span>HOTLINE:<a href="tel:84293743">(+84) 293 743</a></span><span>EMAIL:<a href="mailto:SUPPORT@VALEY.CO">SUPPORT@VALEY.CO</a></span>
+					<form class="form form_contacts">
+						<div class="form__group">
+							<input class="form__input" placeholder="Your name" name="name" type="text">
+						</div>
+						<div class="form__group">
+							<input class="form__input" placeholder="Your email" name="mail" type="email">
+						</div>
+						<div class="form__group">
+							<input class="form__input" placeholder="Your subject" name="subj" type="text">
+						</div>
+						<div class="form__group">
+							<textarea class="form_contacts__area"></textarea>
+						</div>
+						<button class="btn btn-order" type="submit">Send</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<div class="pages" id="pages-22">
+			<div class="pages-header" id="toogle-23">
+				<p>Навигация страниц верстки</p><span>GP</span><i class="icon-pages" id="close-24"></i>
+			</div>
+			<ul>
+				<li><a href="./">Главная</a>
+				</li>
+				<li><a href="ui.html">UI</a>
+				</li>
+				<li><a href="catalog.html">Catalog</a>
+				</li>
+				<li><a href="contacts.html">Contacts</a>
+				</li>
+				<li><a href="blog.html">Blog</a>
+				</li>
+				<li><a href="checkout.html">Checkout</a>
+				</li>
+				<li><a href="blog-inner.html">Blog inner</a>
+				</li>
+				<li><a href="basket.html">Basket</a>
+				</li>
+				<li><a href="product.html">Product</a>
+				</li>
+			</ul>
+		</div>
+		<script>
+			$('#toogle-23').on('click', function(event) {
+				event.preventDefault();
+				/*Act on the event */
+				$('#pages-22').toggleClass('open');
+			});
+		</script>
+		<!--jquery-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</main>
+</body>
+<!--footer-->
+<footer class="footer">
+	<div class="container">
+		<div class="footer-block">
+			<div class="footer-block__top">forever new
+				<p>love your clothers</p>
+			</div>
+			<div class="footer-block__inner">Quisque rytrum. Aenean imperdiet. Etiam ultricies nisivel augue.</div>
+			<div class="footer-block__bottom">© 2016</div>
+		</div>
+		<div class="footer-block">
+			<ul class="footer-block__list">
+				<li><a class="footer-block__title" href="#">department</a>
+				</li>
+				<li><a href="#">Products</a>
+				</li>
+				<li><a href="#">How to use</a>
+				</li>
+				<li><a href="#">Good to Know</a>
+				</li>
+				<li><a href="#">Media</a>
+				</li>
+				<li><a href="#">Retailer</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-block">
+			<ul class="footer-block__list">
+				<li><a class="footer-block__title" href="#">information</a>
+				</li>
+				<li><a href="#">Our Career</a>
+				</li>
+				<li><a href="#">About us</a>
+				</li>
+				<li><a href="#">Join news letter</a>
+				</li>
+				<li><a href="#">Corporates</a>
+				</li>
+				<li><a href="#">Relations</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-block"><a class="footer-block__title" href="#">social network</a>
+			<div class="footer-block__social">
+				<a href="#">
+					<svg class="icon icon-ig">
+						<use xlink:href="images/sprite/sprite.svg#ig"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<img src="images/icon-fb.png">
+				</a>
+			</div>
+			<div class="footer-block__inner">Quisque rytrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</div>
+			<form class="footer-block__form">
+				<input class="footer-block__input" type="email" name="mail">
+				<button class="footer-block__submit" type="submit">
+					<svg class="icon icon-send">
+						<use xlink:href="images/sprite/sprite.svg#sent-mail"></use>
+					</svg>
+				</button>
+				<div class="footer-block__line"></div>
+			</form>
+		</div>
+	</div>
+</footer>
+
+</html>

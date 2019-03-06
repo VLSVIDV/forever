@@ -1,0 +1,241 @@
+/* ==========================================================================
+	 HEADER
+	 =========================================================================*/
+.header{
+  display: flex;
+  position: relative;
+  min-height:126px;
+  border-bottom: 6px solid #97c684;
+  @include mq('tablet', 'max'){
+    min-height: 76px;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include mq('laptop', 'max'){
+      justify-content: space-around;
+    }
+    @include mq('tablet', 'max'){
+      justify-content: space-between;
+    }
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 136px;
+    height: 126px;
+    background: url("../images/flower-left.png") no-repeat;
+    @include mq ('desktop-max', 'max'){
+      display: none;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 136px;
+    height: 126px;
+    background: url("../images/flower-right.png") no-repeat;
+    @include mq ('desktop-max', 'max'){
+      display: none;
+    }
+  }
+}
+.logo{
+  display: inline-block;
+  width: 175px;
+  height: 93px;
+  background: url("../images/logo.png") no-repeat;
+  @include mq('tablet', 'max'){
+    width: 65px;
+    height: 34px;
+    background-size: cover;
+  }
+}
+.header__menu{
+  position: relative;
+  @include mq('laptop', 'max'){
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    background: $color-white;
+    text-align: center;
+    z-index: 20;
+    transform: translateX(100%);
+    transition: all .3s ease;
+  }
+}
+
+.header__menu.open-menu{
+  transform: translateX(0%);
+}
+.close-menu{
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 21;
+  @include mq('laptop', 'max'){
+    display: flex;
+    justify-content: center;
+    position: fixed;
+
+  }
+}
+.close-menu__icon{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    background: $color-main;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    background: $color-main;
+    transform: translateY(-50%) rotate(135deg);
+  }
+}
+.header__nav{
+  display: flex;
+  flex-direction: row;
+  li{
+    &:not(:last-child){
+      margin-right: 100px;
+      @include mq ('desktop', 'max'){
+        margin-right: 60px;
+        @include mq('laptop', 'max'){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  a{
+    color:$color-main;
+    text-transform: uppercase;
+    &:hover{
+      color: $color-green;
+      text-decoration: none;
+    }
+  }
+  @include mq('laptop', 'max'){
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 80px;
+    min-height: 130px;
+  }
+}
+.btn_search{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url("../images/icon-search.png") no-repeat;
+}
+.btn_shop{
+  position: relative;
+  width: 22px;
+  height: 18px;
+  color:$color-main;
+  .icon{
+    width: 100%;
+    height: 100%;
+  }
+  &:hover{
+    color:$color-main;
+  }
+  &:after{
+    content: '0';
+    position: absolute;
+    top: -5px;
+    right: -11px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $color-green;
+    @include font-size(8px);
+    text-align: center;
+    line-height: 16px;
+    overflow: hidden;
+  }
+}
+.header__lang{
+  display: flex;
+  flex-direction: row;
+  a{
+    position: relative;
+    color:$color-main;
+    text-transform: uppercase;
+    &:not(:last-child){
+      margin-right: 10px;
+      &:after{
+        content: '';
+        position: absolute;
+        right: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 14px;
+        width: 1px;
+        background: $color-main;
+      }
+    }
+  }
+}
+//burger
+
+.burger{
+  display: none;
+  position: relative;
+  align-self: center;
+  margin-top: 6px;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  &:before{
+    content:'';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 2px;
+    width: 30px;
+    background-color: $color-main;
+    box-shadow: 0 9px 0 $color-main, 0 18px 0 $color-main;
+  }
+  @include mq('laptop', 'max'){
+    display: block;
+  }
+}
+
+/* end header */

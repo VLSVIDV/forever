@@ -1,0 +1,46 @@
+// variables,mixins,extends
+@import "global/helpers/helpers_all";
+@import "global/helpers/_custom-mixin.scss";
+@import "global/helpers/_family.scss";
+//normalize
+@import "global/normalize";
+
+// grid
+@import "global/grid/v3/bootstrap-grid.scss";
+
+// globals
+@import "global/global";
+@import "global/header";
+@import "global/footer";
+@import "global/modal";
+// sprite
+@import "sprite/sprite";
+
+//plugins
+@import "plugins/slick.scss";
+@import "plugins/slick-theme.scss";
+@import "plugins/jquery.selectBox.scss";
+// //home
+@import "home/first";
+@import "home/section-products";
+@import "home/section-sliders";
+@import "home/section-slider-2";
+//catalog
+@import "global/catalog/section-cards";
+//contacts
+@import "global/contacts/contacts-content";
+//blog
+@import "global/blog/blog-banner";
+@import "global/blog/blog-inner";
+//checkout
+@import "global/checkout/checkout";
+//blog-inner
+@import "global/blog-inner/blog-inner";
+//basket
+@import "global/basket/basket-banner";
+@import "global/basket/basket-inner";
+//product
+@import "global/product/product-banner";
+@import "global/product/product-inner";
+//pages styles
+@import "global/helpers/pages";
