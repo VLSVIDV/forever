@@ -1,5 +1,5 @@
 .basket{
-  padding: 68px 0 40px;
+  padding: 36px 0 40px;
   .container{
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@
   }
 }
 .basket__table{
-  width: 65%;
+  width: 61%;
   @include mq('laptop', 'max'){
     width: 100%;
   }
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 180px;
+    min-height: 162px;
     border-bottom: 2px solid #f2f2f2;
     &:first-child{
       min-height: auto;
@@ -95,11 +95,15 @@
     top: 50%;
     transform: translateY(-50%);
     height: 2px;
-    width: 27px;
+    width: 25px;
     background: #ebebeb;
+    @include mq('tablet', 'max'){
+      width: 19px;
+    }
   }
 }
 .basket__btn{
+  padding: 0;
   margin-top: -2px;
   display: flex;
   justify-content: center;
@@ -129,7 +133,8 @@
   }
 }
 .basket-totals{
-  padding: 43px 67px 39px;
+  margin-top: 28px;
+  padding: 43px 67px 37px;
   width: 30.7%;
   background: $color-green;
   color:$color-white;
@@ -149,7 +154,7 @@
   letter-spacing: 1.3px;
 }
 .basket-totals__table{
-  margin-top: 32px;
+  margin-top: 21px;
   width: 100%;
   tr{
     display: flex;
@@ -175,20 +180,23 @@
   }
 }
 .basket__buttons{
-  margin-bottom: 49px;
-  margin-top: 40px;
-  min-height: 230px;
+  margin-bottom: 53px;
+  margin-top: 35px;
+  min-height: 238px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .basket__form{
-  margin-top: 30px;
+  margin-top: 24px;
   .form__input{
     padding-left: 30px;
     min-width: 100%;
   }
   .btn{
-    margin-top: 42px;
+    margin-top: 41px;
   }
+}
+.icon-basket{
+  @include font-size(8px);
 }

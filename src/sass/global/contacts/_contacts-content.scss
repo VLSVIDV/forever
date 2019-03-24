@@ -1,5 +1,5 @@
 .contacts-content{
-  padding: 80px 0 100px;
+  padding: 66px 0 108px;
   .container{
     display: flex;
     @include mq('tablet', 'max'){
@@ -11,13 +11,14 @@
   }
 }
 .contacts-content__social{
-  width: 50%;
+  width: 51%;
   p{
     position: relative;
-    margin-bottom: 34px;
-    padding-bottom: 39px;
+    margin-bottom: 35px;
+    padding-bottom: 41px;
+    width: 75%;
     color:$color-main;
-    @include font-size(30px);
+    @include font-size(26px);
     text-transform: uppercase;
     @include mq('laptop', 'max'){
       @include font-size(20px);
@@ -45,7 +46,7 @@
   }
 }
 .contacts-content__form{
-  width: 50%;
+  width: 46%;
   p{
     @include font-size(30px);
     color:$color-main;
@@ -55,7 +56,7 @@
     }
   }
   span{
-    margin-top: 20px;
+    margin-top: 16px;
     display: block;
     font-family: $font-family-libre-r;
     color: #998e8e;
@@ -63,6 +64,9 @@
       padding-left: 5px;
       font-family: inherit;
       color:inherit;
+      &:hover{
+        color:$color-green;
+      }
     }
   }
   @include mq('tablet', 'max'){
@@ -116,4 +120,14 @@
   border: 2px solid #f2f2f2;
   resize: none;
   outline: none;
+}
+.icon.icon-fb{
+
+}
+.icon-fb_brown{
+  width: 14px;
+  height: 27px;
+  fill: transparent;
+  stroke: #603f25;
+  stroke-width: 4px;
 }

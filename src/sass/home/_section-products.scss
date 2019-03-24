@@ -2,7 +2,7 @@
 	 section-products
 	 ===========================================================================*/
 .section-products{
-  padding: 80px 0 60px;
+  padding: 88px 0 61px;
   text-align: center;
   @include mq('tablet', 'max'){
     padding: 20px 0 20px;
@@ -15,7 +15,7 @@
     }
   }
   .btn{
-    margin-top: 55px;
+    margin-top: 87px;
     @include mq('tablet', 'max'){
       margin-top: 25px;
     }

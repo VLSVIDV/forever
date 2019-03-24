@@ -3,7 +3,7 @@
    ===========================================================================*/
 .modal{
   display: none;
-  padding: 62px 62px 56px;
+  padding: 56px 64px 56px;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -11,7 +11,6 @@
   right:  0;
   margin: 0 auto;
   width: 724px;
-  height: 729px;
   background: $color-white;
   box-shadow: 0 0 9px rgba(128, 127, 127, 0.5);
   z-index:  41;
@@ -59,17 +58,18 @@
   text-align: center;
 }
 .modal__form{
-  margin-top: 73px;
+  margin-top: 69px;
   display: flex;
   flex-direction: column;
   .form__group{
     &:not(:first-child){
-      margin-top: 47px;
+      margin-top: 45px;
     }
   }
   .btn{
     margin-top: 23px;
     margin-left: auto;
+    padding: 0 22px;
     @include mq('tablet', 'max'){
       margin-left: 0;
     }
@@ -80,6 +80,9 @@
   textarea{
     @include mq('tablet', 'max'){
       min-height: 133px;
+    }
+    @include mq('laptop', 'max'){
+      min-height: 83px;
     }
   }
 }

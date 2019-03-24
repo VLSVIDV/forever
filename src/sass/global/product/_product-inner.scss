@@ -1,5 +1,5 @@
 .product-inner{
-  padding: 53px 0 100px;
+  padding: 53px 0 60px;
   .container{
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@
   width: 50%;
   p{
     margin-top: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 61px;
     @include font-size(16px);
     color: #141414;
     text-transform: uppercase;
@@ -23,7 +23,7 @@
   }
   .form__group{
     &:not(last-child){
-      margin-bottom: 47px;
+      margin-bottom: 40px;
     }
   }
   @include mq('tablet', 'max'){
@@ -135,7 +135,7 @@
   }
 }
 .product-inner__reviews{
-  margin-top: 147px;
+  margin-top: 98px;
   @include mq('tablet', 'max'){
     margin-top: 57px;
   }
@@ -174,7 +174,7 @@
 }
 .product-inner__comment{
   padding-bottom: 47px;
-  margin-top: 23px;
+  margin-top: 24px;
   @include font-size(16px);
   color: #0b0b0b;
   letter-spacing: 1.2px;

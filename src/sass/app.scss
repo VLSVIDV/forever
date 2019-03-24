@@ -27,15 +27,17 @@
 @import "home/section-slider-2";
 //catalog
 @import "global/catalog/section-cards";
+@import "global/catalog/catalog-slider";
 //contacts
 @import "global/contacts/contacts-content";
 //blog
 @import "global/blog/blog-banner";
-@import "global/blog/blog-inner";
+@import "global/blog-inner/blog-inner";
+@import "global/blog/blog-pagination";
 //checkout
 @import "global/checkout/checkout";
 //blog-inner
-@import "global/blog-inner/blog-inner";
+@import "global/blog-inner/blog-content";
 //basket
 @import "global/basket/basket-banner";
 @import "global/basket/basket-inner";

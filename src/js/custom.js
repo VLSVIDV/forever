@@ -241,7 +241,7 @@ $(function () {
     // slider - 1
     $('.js-slider').slick({
         arrows:false,
-        autoplay:true,
+        autoplay:false,
         dots:true
     });
 

@@ -2,8 +2,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  text-align: left;
   width:25%;
-  min-height:446px;
+  min-height:450px;
   background: $color-white;
   overflow: hidden;
   &:hover{
@@ -23,8 +24,8 @@
   &:before{
     content: 'HOT!';
     position: absolute;
-    top: 17px;
-    right: 0;
+    top: 21px;
+    right: 6px;
     text-align: center;
     font-weight: 600;
     @include font-size(10px);
@@ -36,6 +37,7 @@
   }
 }
 .sellers-card__image{
+  margin-bottom: 56px;
   position: relative;
   display: flex;
   justify-content: center;

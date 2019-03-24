@@ -1,5 +1,5 @@
 .section-cards{
-  padding: 77px 0 100px;
+  padding: 72px 0 85px;
   @include mq('laptop','max'){
     padding: 30px 0 50px;
   }
@@ -10,13 +10,13 @@
   }
   .catalog-card{
     &:nth-child(3){
-      margin-top: 100px;
+      margin-top: 108px;
       @include mq('laptop', 'max'){
         margin-top: 0;
       }
     }
     &:nth-child(4){
-      margin-top: 100px;
+      margin-top: 108px;
       @include mq('laptop', 'max'){
         margin-top: 0;
       }

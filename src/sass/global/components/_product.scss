@@ -1,9 +1,7 @@
 .product{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  max-width: 279px;
-  min-height: 358px;
+  width: 25%;
   background: $color-white;
   overflow: hidden;
   transition: .5s ease;
@@ -28,11 +26,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 255px;
+  min-height: 273px;
 }
 
 .product__name{
-  margin-top: 30px;
+  margin: 0 auto;
+  width: 82%;
+  min-height: 32px;
   text-align: center;
   color:$color-main;
   text-transform: uppercase;

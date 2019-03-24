@@ -1,5 +1,5 @@
 .checkout{
-  padding: 80px 0 107px;
+  padding: 72px 0 107px;
   @include mq('tablet', 'max'){
     padding: 30px 0 0;
   }
@@ -7,7 +7,7 @@
 .checkout__block{
   position: relative;
   &:not(:first-child){
-    padding-top: 49px;
+    padding-top: 42px;
     &:before{
       content: '';
       position: absolute;
@@ -31,7 +31,9 @@
   }
 }
 .checkout__btn{
+  margin-bottom: 40px;
   position: relative;
+  text-align: left;
   background: transparent;
   border: none;
   text-transform: uppercase;
@@ -54,14 +56,12 @@
   }
 }
 .checkout__text{
-  margin-top: 44px;
-  margin-bottom: 57px;
+  margin-bottom: 46px;
   @include font-size(16px);
   line-height: 24px;
   color: #0b0b0b;
   letter-spacing: 1.2px;
   @include mq('tablet', 'max'){
-    margin-top: 24px;
     @include font-size(14px);
   }
 }
@@ -117,7 +117,6 @@ input[type=checkbox] {
   color: $color-green;
 }
 .form_billing{
-  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -135,7 +134,13 @@ input[type=checkbox] {
   }
 }
 .form_additional{
-  margin-top: 44px;
+  margin-top: 10px;
+}
+.form_checkout{
+  width: 89%;
+  @include mq('tablet', 'max'){
+    width: 100%;
+  }
 }
 .form_additional__area{
   min-width: 567px;
@@ -156,9 +161,6 @@ input[type=checkbox] {
   @include mq('tablet','max'){
     width: 100%;
   }
-}
-.form_shipp{
-  margin-top: 80px;
 }
 .checkout__order{
   max-width: 569px;
@@ -212,7 +214,6 @@ input[type=checkbox] {
 }
 //table
 .checkout__table{
-  margin-top: 70px;
   width: 100%;
   color:$color-main;
   border-collapse: collapse;

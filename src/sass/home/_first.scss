@@ -68,17 +68,21 @@
   }
 }
 .first__offer{
+  margin-top: 27px;
   color: $color-green;
   @include font-size(12px);
   text-transform: uppercase;
+  @include mq('tablet', 'max'){
+    margin-top: 0;
+  }
 }
 .first__title{
-  margin-top: 20px;
+  margin-top: 13px;
   padding-bottom: 21px;
   position: relative;
   font-family: $font-family-libre-r;
   @include font-size(36px);
-  color: $color-main;
+  color: #43230c;
   @include mq('laptop', 'max'){
     @include font-size(25px);
   }

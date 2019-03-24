@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 251px;
+  width: 244px;
   @include mq('tablet', 'max'){
     width: 100%;
   }
@@ -48,7 +48,8 @@
   color: #43230c;
 }
 .catalog-card__text{
-  margin-top: 20px;
+  margin-top: 16px;
+  line-height: 23px;
   width: 60%;
   color:$color-main;
   @include mq('desktop', 'max'){
@@ -57,7 +58,7 @@
 }
 .catalog-card__price{
   position: relative;
-  margin-top: 50px;
+  margin-top: 42px;
   @include font-size(24px);
   color:$color-black;
   letter-spacing: 0.6px;

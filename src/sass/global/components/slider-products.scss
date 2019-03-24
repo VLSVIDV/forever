@@ -12,7 +12,7 @@
 }
 .slider-products__title{
   position: absolute;
-  top: 40px;
+  top: 31px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -22,7 +22,7 @@
   letter-spacing: 1.8px;
   z-index: 1;
   a{
-    padding-top: 15px;
+    padding-top: 11px;
     margin: 0 auto;
     display: block;
     width: 10%;
@@ -33,6 +33,17 @@
     @include mq('tablet', 'max'){
       width: 30%;
     }
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    top: -31px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 30px;
+    height: 2px;
+    background: $color-black;
   }
 }
 .js-products{
@@ -46,20 +57,20 @@
     }
   }
   .slick-next{
-    right: 36%;
-    top: 80px;
+    right: 36.3%;
+    top: 43px;
     background: url("../images/arrow-right.svg") no-repeat center;
     @include mq('tablet', 'max'){
-      right: 25%;
+      right: 15%;
     }
   }
   .slick-prev{
     left: 36%;
-    top: 71px;
+    top: 35px;
     background: url("../images/arrow-right.svg") no-repeat center;
     transform: rotate(180deg);
     @include mq('tablet', 'max'){
-      left: 25%;
+      left: 15%;
     }
   }
 }

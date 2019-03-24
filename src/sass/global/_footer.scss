@@ -3,6 +3,7 @@
    ===========================================================================*/
 .footer{
   padding-bottom: 47px;
+  position: relative;
   @include mq('tablet-small', 'max'){
     padding: 20px 0;
   }
@@ -12,9 +13,35 @@
       flex-wrap: wrap;
     }
   }
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -63px;
+    transform:translateY(-50%);
+    width: 136px;
+    height: 126px;
+    background: url("../images/footer-left.png") no-repeat;
+    @include mq ('desktop-max', 'max'){
+      display: none;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -63px;
+    transform:translateY(-50%);
+    width: 136px;
+    height: 126px;
+    background: url("../images/footer-right.png") no-repeat;
+    @include mq ('desktop-max', 'max'){
+      display: none;
+    }
+  }
 }
 .footer-block{
-  padding-top: 50px;
+  padding-top: 47px;
   position: relative;
   width:25%;
   min-height: 268px;
@@ -49,7 +76,7 @@
   }
 }
 .footer-block__top{
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   font-family: $font-family-sfui;
   color: $color-main;
   @include font-size(24px);
@@ -59,12 +86,10 @@
   }
 }
 .footer-block__inner{
+  margin-bottom: 41px;
   width: 60%;
   color: #9c9c9c;
   line-height: 24px;
-}
-.footer-block__inner{
-  margin-bottom: 30px;
 }
 .footer-block__bottom{
   color: #c9c9c9;
@@ -87,7 +112,7 @@
       margin-bottom: 30px;
     }
     &:not(:last-child){
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       @include mq('tablet-small', 'max'){
         margin-bottom: 10px;
       }
@@ -99,9 +124,10 @@
 }
 .footer-block__social{
   display: flex;
-  padding: 25px 0;
+  padding: 25px 0 15px 0;
   a{
-     color: $color-green;
+    height: 31px;
+    color: $color-green;
     &:not(:last-child){
       margin-right: 25px;
     }
@@ -111,6 +137,13 @@
   width: 25px;
   height: 26px;
 }
+.icon.icon-fb{
+  width: 14px;
+  height: 27px;
+  fill: transparent;
+  stroke: $color-green;
+  stroke-width: 4px;
+}
 .icon.icon-send{
   width: 14px;
   height: 13px;
@@ -118,6 +151,7 @@
 .footer-block__form{
   display: flex;
   position: relative;
+  width: 94%;
   border-bottom: 2px solid #e5e5e5
 }
 .footer-block__line{
@@ -134,15 +168,22 @@
   background: red;
 }
 .footer-block__input{
+  padding-left: 13px;
   border: none;
   outline: none;
   width: 89%;
+  height: 30px;
+  font-family: $font-family-main;
+  letter-spacing: 0.35px;
   &:focus{
     ~.footer-block__line{
       width: 100%;
       transition: all .3s ease-in-out;
       visibility: visible;
     }
+  }
+  &::placeholder{
+    color: #adadad;
   }
 }
 
